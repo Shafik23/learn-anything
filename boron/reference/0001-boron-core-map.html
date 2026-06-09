@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boron Core Map</title>
+  <style>
+    :root {
+      --ink: #172026;
+      --muted: #52616b;
+      --line: #d8e0e6;
+      --paper: #fbfcfb;
+      --panel: #ffffff;
+      --blue: #1f6fb2;
+      --green: #287a4b;
+      --amber: #956314;
+      --red: #a23a2e;
+    }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+    main {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 42px 22px 56px;
+    }
+    h1, h2, h3 { line-height: 1.15; margin: 0; }
+    h1 { font-size: clamp(2rem, 4vw, 3rem); letter-spacing: 0; }
+    h2 { font-size: 1.25rem; margin-top: 30px; padding-top: 22px; border-top: 1px solid var(--line); }
+    h3 { font-size: 1rem; margin-bottom: 8px; }
+    p { margin: 10px 0; }
+    a { color: var(--blue); }
+    .subhead { color: var(--muted); max-width: 760px; font-size: 1.05rem; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px;
+    }
+    .tag {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 999px;
+      color: white;
+      margin-bottom: 10px;
+    }
+    .known { background: var(--green); }
+    .plausible { background: var(--amber); }
+    .weak { background: var(--red); }
+    .mechanism { background: var(--blue); }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 14px;
+      background: white;
+      border: 1px solid var(--line);
+    }
+    th, td {
+      text-align: left;
+      vertical-align: top;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--line);
+    }
+    th { background: #eef3f6; }
+    .callout {
+      border-left: 5px solid var(--blue);
+      background: #eef6fc;
+      padding: 14px 16px;
+      margin-top: 18px;
+      border-radius: 6px;
+    }
+    .print-note { color: var(--muted); font-size: 0.9rem; }
+    @media (max-width: 760px) {
+      .grid { grid-template-columns: 1fr; }
+      th, td { display: block; width: auto; }
+      th { border-bottom: 0; }
+    }
+    @media print {
+      body { background: white; }
+      main { padding: 18px; }
+      .card, table { break-inside: avoid; }
+      a { color: black; text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Boron Core Map</h1>
+    <p class="subhead">A quick reference for learning boron without mixing up food intake, supplement dosing, plausible mechanisms, and clinical outcomes.</p>
+
+    <section class="grid" aria-label="Evidence categories">
+      <article class="card">
+        <span class="tag known">Known enough to anchor on</span>
+        <h3>Boron is a dietary trace element, not an established essential nutrient.</h3>
+        <p>It is naturally present in many plant foods. The Food and Nutrition Board has not set an RDA or AI for boron, so there is no US Daily Value.</p>
+      </article>
+      <article class="card">
+        <span class="tag known">Known enough to anchor on</span>
+        <h3>Most supplemental labels list elemental boron.</h3>
+        <p>A 3 mg label usually means 3 mg elemental boron, not 3 mg of the carrier compound.</p>
+      </article>
+      <article class="card">
+        <span class="tag plausible">Plausible but not settled</span>
+        <h3>Boron may interact with mineral and steroid-hormone metabolism.</h3>
+        <p>Human and animal data suggest effects on calcium, magnesium, vitamin D, estrogen, testosterone, and inflammatory markers, but endpoints and designs vary.</p>
+      </article>
+      <article class="card">
+        <span class="tag weak">Not established</span>
+        <h3>Boron is not proven to reliably raise testosterone or improve strength.</h3>
+        <p>Small studies conflict: one short study found free-testosterone changes, while a bodybuilding study found no effect on testosterone, lean mass, or strength.</p>
+      </article>
+    </section>
+
+    <h2>Safety Anchors</h2>
+    <table>
+      <tr><th>Anchor</th><th>What to remember</th></tr>
+      <tr><td>Common supplement range</td><td>NIH ODS lists common supplemental amounts around 0.15 to 6 mg elemental boron.</td></tr>
+      <tr><td>Typical adult total intake</td><td>NIH ODS summarizes total median intake from food plus supplements at about 1.0 to 1.5 mg/day for adults.</td></tr>
+      <tr><td>US adult UL</td><td>The US adult tolerable upper intake level is 20 mg/day from all sources.</td></tr>
+      <tr><td>European safety comparison</td><td>EFSA set a lower adult UL of 10 mg/day for boron from boric acid and borates.</td></tr>
+      <tr><td>Do not confuse forms</td><td>Boron supplements are not the same as ingesting borax or household boric acid products.</td></tr>
+    </table>
+
+    <div class="callout">
+      <strong>Your 3 mg context:</strong> 3 mg/day supplemental boron is inside the common supplement range listed by NIH ODS and below both the US adult UL and EFSA adult UL. That does not prove benefit, and it does not replace medication, kidney, pregnancy, fertility, or lab-context review by a clinician.
+    </div>
+
+    <h2>Claim Sorting Ladder</h2>
+    <table>
+      <tr><th>Question</th><th>Good evidence would look like</th><th>Current direction</th></tr>
+      <tr><td>Is boron present in normal diets?</td><td>Food composition and intake surveys.</td><td>Yes, especially plant foods.</td></tr>
+      <tr><td>Is boron essential for humans?</td><td>Clear deficiency syndrome plus intake requirement.</td><td>Not established.</td></tr>
+      <tr><td>Can boron shift hormones?</td><td>Repeated randomized human trials measuring total T, free T, SHBG, estradiol, symptoms, and baseline status.</td><td>Plausible, but current human evidence is small and mixed.</td></tr>
+      <tr><td>Does boron improve bone outcomes?</td><td>Long-term trials on BMD, fractures, bone turnover, vitamin D, calcium, and magnesium handling.</td><td>Plausible mineral-metabolism role; clinical outcome evidence remains limited.</td></tr>
+      <tr><td>Is more better?</td><td>Dose-response trials balancing benefit, toxicity, and long-term outcomes.</td><td>No. Upper limits exist because high exposure can cause harm.</td></tr>
+    </table>
+
+    <h2>Sources</h2>
+    <p class="print-note">
+      NIH ODS Boron Fact Sheet:
+      <a href="https://ods.od.nih.gov/factsheets/Boron-HealthProfessional/">ods.od.nih.gov/factsheets/Boron-HealthProfessional/</a><br>
+      National Academies DRI UL table:
+      <a href="https://www.ncbi.nlm.nih.gov/books/NBK208874/">ncbi.nlm.nih.gov/books/NBK208874/</a><br>
+      EFSA boron UL opinion:
+      <a href="https://www.efsa.europa.eu/en/efsajournal/pub/80">efsa.europa.eu/en/efsajournal/pub/80</a><br>
+      Naghii et al. 2011:
+      <a href="https://pubmed.ncbi.nlm.nih.gov/21129941/">pubmed.ncbi.nlm.nih.gov/21129941/</a><br>
+      Ferrando and Green 1993:
+      <a href="https://pubmed.ncbi.nlm.nih.gov/8508192/">pubmed.ncbi.nlm.nih.gov/8508192/</a>
+    </p>
+  </main>
+</body>
+</html>
