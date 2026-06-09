@@ -5,7 +5,6 @@ Goal: after this lesson, you should be able to place boron claims into the right
 - Time: 8-12 minutes
 - Skill: evidence triage
 - Reference: [Boron Core Map](../reference/0001-boron-core-map.md)
-- Optional local HTML version: [0001-boron-evidence-map.html](./0001-boron-evidence-map.html)
 
 > **Health context:** You said you already take 3 mg/day. NIH ODS lists common supplemental boron amounts around 0.15 to 6 mg, and the US adult UL is 20 mg/day from all sources. EFSA uses a lower adult UL of 10 mg/day for boron from boric acid and borates. That means 3 mg is not a megadose, but benefit still has to be proven separately from safety.
 

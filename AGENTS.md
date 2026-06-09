@@ -9,8 +9,8 @@ Topic directories should follow this layout:
 - `MISSION.md` - the reason the learner cares about the topic and what success looks like
 - `RESOURCES.md` - trusted sources and communities
 - `NOTES.md` - teaching preferences and working notes
-- `lessons/` - GitHub-renderable Markdown lessons, with optional HTML versions for richer local viewing
-- `reference/` - GitHub-renderable Markdown quick-reference documents, with optional printable HTML versions
+- `lessons/` - GitHub-renderable Markdown lessons
+- `reference/` - GitHub-renderable Markdown quick-reference documents
 - `learning-records/` - durable records of what has been learned
 
 The root `README.md` is the index of all topics.
@@ -29,7 +29,6 @@ The root `README.md` is the index of all topics.
 
 - Name lessons as `lessons/0001-short-dash-case-title.md`, incrementing the number.
 - Name reference pages as `reference/0001-short-dash-case-title.md`, incrementing the number.
-- If a lesson needs richer local interactivity or print styling, add an HTML companion with the same numeric prefix and slug.
 - Name learning records as `learning-records/0001-short-dash-case-title.md`, incrementing the number.
 - Prefer ASCII text unless an existing file clearly uses another character set.
 - Keep root-level files for repo-wide guidance only.

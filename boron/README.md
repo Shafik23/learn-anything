@@ -13,4 +13,3 @@ Key files:
 - [RESOURCES.md](./RESOURCES.md)
 - [reference/0001-boron-core-map.md](./reference/0001-boron-core-map.md)
 - [lessons/0001-boron-evidence-map.md](./lessons/0001-boron-evidence-map.md)
-- [lessons/0001-boron-evidence-map.html](./lessons/0001-boron-evidence-map.html) - optional local interactive version
