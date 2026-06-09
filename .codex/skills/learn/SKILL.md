@@ -38,9 +38,15 @@ For `$learn <topic>`:
    - `overview.md`
    - `sources.md`
    - `reference/`
-4. Update the root `README.md` topic list.
+4. Update the root `README.md` topic list every time a new topic workspace is created. The root `README.md` is the repo-wide topic index, so the new topic must be listed there before the task is considered complete.
 5. If the mission in `README.md` is missing or vague, ask the user why they want to learn the topic before writing topic pages.
 6. If the mission is clear enough, create or update `overview.md`, then create any useful focused reference pages.
+7. After researching and writing topic content, commit and push all intended changes for the learning session.
+   - Inspect `git status --short --branch` and the relevant diff before staging.
+   - Stage only the root `README.md` update and the active topic workspace unless the user explicitly asked for broader changes.
+   - Use a clear commit message such as `Add vitamin D3 learning workspace` or `Update vitamin D3 learning workspace`.
+   - Push the current branch to `origin`.
+   - If authentication, remote configuration, or unrelated worktree changes block a safe commit/push, report the blocker instead of silently skipping the publish step.
 
 ## Teaching Workspace
 
