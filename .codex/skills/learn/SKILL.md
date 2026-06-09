@@ -7,6 +7,14 @@ argument-hint: "What would you like to learn about?"
 
 The user has asked to learn something. This is a stateful request: they intend to learn the topic over multiple sessions.
 
+The primary invocation is:
+
+```text
+/learn <topic>
+```
+
+When the user invokes `/learn <topic>`, treat `<topic>` as the subject to create or resume.
+
 ## Repository Shape
 
 Treat this repo as a collection of topic-specific teaching workspaces.
@@ -17,6 +25,18 @@ The repo root is the index. Each top-level topic directory is one teaching works
 - `./another-topic/`
 
 When starting a new topic, create a new top-level directory using dash-case. Do not put a topic workspace directly at the repo root.
+
+For `/learn <topic>`:
+
+1. Convert `<topic>` into a dash-case slug.
+   - `Boron` -> `boron`
+   - `Linear Algebra` -> `linear-algebra`
+   - `OpenAI API` -> `openai-api`
+2. Create or resume `./<topic-slug>/`.
+3. If the topic directory is new, initialize the standard workspace files and directories.
+4. Update the root `README.md` topic list.
+5. If `MISSION.md` is missing or vague, ask the user why they want to learn the topic before writing lessons.
+6. If the mission is clear enough, create the first Markdown lesson and any useful reference page.
 
 ## Teaching Workspace
 
