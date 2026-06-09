@@ -19,12 +19,13 @@ Invocation:
    - Never create nested topic workspaces like `./science/boron/`; use exactly one top-level topic directory.
 3. If the directory is new, initialize:
    - `README.md`
+   - `overview.md`
    - `sources.md`
    - `progress.md`
    - `lessons/`
    - `reference/`
 4. If the mission in `README.md` is missing or vague, ask the user why they want to learn the topic before writing lessons.
-5. If the mission is clear enough, create the first GitHub-renderable Markdown lesson and any useful reference page.
+5. If the mission is clear enough, create or update `overview.md`, then create the first GitHub-renderable Markdown lesson and any useful reference page.
 6. Update the root `README.md` topic index when adding a new topic.
 7. Keep lessons and references as Markdown. Do not create HTML.
 

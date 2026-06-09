@@ -15,6 +15,7 @@ The agent should create or resume a one-level-deep topic folder such as `boron/`
 Each topic lives one level below the repo root and can contain:
 
 - `README.md` - the topic front door: mission, roadmap, lesson index, and file index
+- `overview.md` - the direct explanation of the topic
 - `sources.md` - trusted sources and communities
 - `progress.md` - compact durable learning state
 - `lessons/` - GitHub-renderable Markdown lessons

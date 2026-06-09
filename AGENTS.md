@@ -13,6 +13,7 @@ The primary user workflow is `/learn <topic>`. Treat that as a command to create
 Topic directories should follow this layout:
 
 - `README.md` - the topic front door: mission, roadmap, lesson index, and file index
+- `overview.md` - the direct explanation of the topic
 - `sources.md` - trusted sources and communities
 - `progress.md` - compact durable learning state
 - `lessons/` - GitHub-renderable Markdown lessons
@@ -29,6 +30,7 @@ The root `README.md` is the index of all topics.
 - Leave the repo root for repo-wide files only, such as `README.md`, `AGENTS.md`, `CLAUDE.md`, and `.codex/`.
 - Ground health, legal, financial, and fast-changing topics in current high-trust sources.
 - Lessons should teach one tightly scoped skill or concept and should be quick to complete.
+- Every topic should have an `overview.md` that explains the topic directly, separate from the learning plan in `README.md`.
 - Lessons and references should be readable directly on github.com. Use Markdown as the primary format.
 - Create or update reference documents when a lesson introduces reusable knowledge.
 - Update `progress.md` only for durable demonstrated understanding, prior knowledge, corrected misconceptions, or mission shifts.

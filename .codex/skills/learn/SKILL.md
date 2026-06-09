@@ -35,19 +35,21 @@ For `/learn <topic>`:
 2. Create or resume `./<topic-slug>/`.
 3. If the topic directory is new, initialize the standard workspace files and directories:
    - `README.md`
+   - `overview.md`
    - `sources.md`
    - `progress.md`
    - `lessons/`
    - `reference/`
 4. Update the root `README.md` topic list.
 5. If the mission in `README.md` is missing or vague, ask the user why they want to learn the topic before writing lessons.
-6. If the mission is clear enough, create the first Markdown lesson and any useful reference page.
+6. If the mission is clear enough, create or update `overview.md`, then create the first Markdown lesson and any useful reference page.
 
 ## Teaching Workspace
 
 Within the active topic directory, learning state is captured in these files:
 
 - `README.md`: the topic front door, mission, roadmap, lesson index, and file index. Use the format in [README-FORMAT.md](./README-FORMAT.md).
+- `overview.md`: the direct explanation of the topic. Use the format in [OVERVIEW-FORMAT.md](./OVERVIEW-FORMAT.md).
 - `sources.md`: trusted sources and communities. Use the format in [SOURCES-FORMAT.md](./SOURCES-FORMAT.md).
 - `progress.md`: compact durable learning state. Use the format in [PROGRESS-FORMAT.md](./PROGRESS-FORMAT.md).
 - `lessons/*.md`: GitHub-renderable Markdown lessons.

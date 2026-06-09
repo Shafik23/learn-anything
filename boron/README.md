@@ -22,6 +22,7 @@ Constraints:
 
 Start here:
 
+- [Overview: Boron](./overview.md)
 - [Lesson 1: Build The Evidence Map](./lessons/0001-boron-evidence-map.md)
 - [Reference: Boron Core Map](./reference/core-map.md)
 
@@ -34,6 +35,7 @@ Start here:
 
 ## Files
 
+- [overview.md](./overview.md)
 - [sources.md](./sources.md)
 - [progress.md](./progress.md)
 - [reference/core-map.md](./reference/core-map.md)

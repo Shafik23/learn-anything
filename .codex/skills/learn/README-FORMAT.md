@@ -24,6 +24,7 @@ Constraints:
 
 Start here:
 
+- [Overview: {Topic}](./overview.md)
 - [Lesson 1: {Title}](./lessons/0001-title.md)
 - [Reference: {Title}](./reference/title.md)
 
@@ -35,6 +36,7 @@ Start here:
 ## Files
 
 - [sources.md](./sources.md)
+- [overview.md](./overview.md)
 - [progress.md](./progress.md)
 - [reference/{file}.md](./reference/{file}.md)
 - [lessons/{file}.md](./lessons/{file}.md)
