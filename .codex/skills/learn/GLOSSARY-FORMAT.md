@@ -1,6 +1,6 @@
-# GLOSSARY.md Format
+# glossary.md Format
 
-`GLOSSARY.md` is the canonical language for a topic workspace. Create it when terminology starts to matter.
+`glossary.md` is the canonical language for a topic workspace. Create it when terminology starts to matter.
 
 ## Structure
 

@@ -33,22 +33,26 @@ For `/learn <topic>`:
    - `Linear Algebra` -> `linear-algebra`
    - `OpenAI API` -> `openai-api`
 2. Create or resume `./<topic-slug>/`.
-3. If the topic directory is new, initialize the standard workspace files and directories.
+3. If the topic directory is new, initialize the standard workspace files and directories:
+   - `README.md`
+   - `sources.md`
+   - `progress.md`
+   - `lessons/`
+   - `reference/`
 4. Update the root `README.md` topic list.
-5. If `MISSION.md` is missing or vague, ask the user why they want to learn the topic before writing lessons.
+5. If the mission in `README.md` is missing or vague, ask the user why they want to learn the topic before writing lessons.
 6. If the mission is clear enough, create the first Markdown lesson and any useful reference page.
 
 ## Teaching Workspace
 
 Within the active topic directory, learning state is captured in these files:
 
-- `MISSION.md`: why the user is learning this topic. Use the format in [MISSION-FORMAT.md](./MISSION-FORMAT.md).
-- `RESOURCES.md`: trusted sources and communities. Use the format in [RESOURCES-FORMAT.md](./RESOURCES-FORMAT.md).
-- `NOTES.md`: user preferences, teaching preferences, and working notes.
+- `README.md`: the topic front door, mission, roadmap, lesson index, and file index. Use the format in [README-FORMAT.md](./README-FORMAT.md).
+- `sources.md`: trusted sources and communities. Use the format in [SOURCES-FORMAT.md](./SOURCES-FORMAT.md).
+- `progress.md`: compact durable learning state. Use the format in [PROGRESS-FORMAT.md](./PROGRESS-FORMAT.md).
 - `lessons/*.md`: GitHub-renderable Markdown lessons.
 - `reference/*.md`: GitHub-renderable Markdown reference documents.
-- `learning-records/*.md`: durable records of what the user has learned. Use the format in [LEARNING-RECORD-FORMAT.md](./LEARNING-RECORD-FORMAT.md).
-- `GLOSSARY.md`: optional canonical vocabulary. Use the format in [GLOSSARY-FORMAT.md](./GLOSSARY-FORMAT.md).
+- `glossary.md`: optional canonical vocabulary. Use the format in [GLOSSARY-FORMAT.md](./GLOSSARY-FORMAT.md).
 
 The repo is primarily read on github.com, so Markdown is the primary output format. Do not create HTML lessons or HTML references unless the user explicitly asks for them.
 
@@ -60,7 +64,7 @@ To learn deeply, the user needs three things:
 - **Skills**, acquired through relevant lessons and exercises
 - **Wisdom**, developed by interacting with practitioners, communities, or real-world situations
 
-Before `RESOURCES.md` is well populated, prioritize finding high-quality resources. Do not rely on parametric memory for health, legal, financial, fast-changing, or high-stakes topics.
+Before `sources.md` is well populated, prioritize finding high-quality resources. Do not rely on parametric memory for health, legal, financial, fast-changing, or high-stakes topics.
 
 Some topics need more skills than knowledge. Learning theoretical physics might be knowledge-heavy. Learning yoga, drawing, or negotiation might be practice-heavy.
 
@@ -96,11 +100,11 @@ Use Markdown features that render well on GitHub:
 
 ## The Mission
 
-Every lesson should tie back to the mission: the concrete reason the user is interested in the topic.
+Every lesson should tie back to the mission in the topic `README.md`: the concrete reason the user is interested in the topic.
 
-If the user is unclear about the mission, or the topic's `MISSION.md` is missing or weak, first ask why they want to learn the topic. A bad mission makes lessons too abstract and prevents good sequencing.
+If the user is unclear about the mission, or the topic `README.md` has a missing or weak mission, first ask why they want to learn the topic. A bad mission makes lessons too abstract and prevents good sequencing.
 
-Revise `MISSION.md` when the user's goal changes.
+Revise the `README.md` mission and roadmap when the user's goal changes.
 
 ## Zone Of Proximal Development
 
@@ -108,13 +112,12 @@ Each lesson should challenge the learner just enough.
 
 If the user names an exact thing they want to learn, focus there. If they do not, determine the next lesson by:
 
-- reading `MISSION.md`
-- reading `learning-records/`
-- checking `NOTES.md`
+- reading the mission and roadmap in `README.md`
+- reading `progress.md`
 - reviewing existing lessons and references
 - choosing the most relevant next skill or concept
 
-If the user says they already know something important, record that in `learning-records/` with the claimed depth.
+If the user says they already know something important, record that in `progress.md` with the claimed depth.
 
 ## Acquiring Knowledge And Skills
 
@@ -123,7 +126,7 @@ Lessons should be designed around a skill or concept the user will practice. Tea
 For high-trust knowledge:
 
 - prefer primary sources, official docs, peer-reviewed papers, textbooks, or recognized expert resources
-- keep `RESOURCES.md` curated and annotated
+- keep `sources.md` curated and annotated
 - remove shallow or misleading resources rather than accumulating links
 
 For practice:
@@ -162,25 +165,13 @@ Reference documents should be compressed and easy to scan on github.com. Name th
 
 Increment the number for each new reference page.
 
-## Learning Records
+## Progress
 
-Learning records are not session logs. Write one only when something durable changes future teaching:
+`progress.md` is not a session log. Update it only when something durable changes future teaching:
 
 - the user demonstrated understanding of a non-trivial concept
 - the user disclosed prior knowledge
 - a misconception was corrected
 - the mission shifted
 
-Use concise records. Prefer one paragraph unless extra evidence or implications genuinely matter.
-
-## `NOTES.md`
-
-Record user preferences and durable working notes in `NOTES.md`, especially:
-
-- preferred lesson style
-- pacing preferences
-- domain constraints
-- recurring safety context
-- stated dislikes
-
-Do not use `NOTES.md` as a transcript.
+Keep it concise and public-safe.

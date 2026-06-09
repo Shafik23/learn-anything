@@ -1,4 +1,4 @@
-# Boron Resources
+# Boron Sources
 
 ## Knowledge
 
@@ -21,7 +21,7 @@
 - [Meacham et al. 1994: Boron supplementation and bone/mineral markers in female athletes](https://pubmed.ncbi.nlm.nih.gov/7889886/)
   Human bone/mineral study. Use when learning the difference between bone mineral density, mineral handling, and actual fracture outcomes.
 
-## Wisdom (Communities)
+## Communities
 
 - [r/ScientificNutrition](https://www.reddit.com/r/ScientificNutrition/)
   Source-required nutrition discussion. Use only for finding papers and seeing critique, not for personal dosing decisions.
