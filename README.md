@@ -7,7 +7,7 @@ Teaching workflow instructions live in the repo-local Codex skill at `.codex/ski
 Use:
 
 ```text
-/learn <topic>
+$learn <topic>
 ```
 
 The agent should create or resume a one-level-deep topic folder such as `boron/` or `linear-algebra/`, then build the topic workspace there.

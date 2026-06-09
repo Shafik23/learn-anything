@@ -10,10 +10,10 @@ The user has asked to learn something. This is a stateful request: they intend t
 The primary invocation is:
 
 ```text
-/learn <topic>
+$learn <topic>
 ```
 
-When the user invokes `/learn <topic>`, treat `<topic>` as the subject to create or resume.
+When the user invokes `$learn <topic>`, treat `<topic>` as the subject to create or resume.
 
 ## Repository Shape
 
@@ -26,7 +26,7 @@ The repo root is the index. Each top-level topic directory is one teaching works
 
 When starting a new topic, create a new top-level directory using dash-case. Do not put a topic workspace directly at the repo root.
 
-For `/learn <topic>`:
+For `$learn <topic>`:
 
 1. Convert `<topic>` into a dash-case slug.
    - `Boron` -> `boron`
