@@ -23,6 +23,7 @@ Each topic lives one level below the repo root and can contain:
 ## Topics
 
 - [Boron](./boron/) - deep science of boron supplementation, testosterone, bone health, mineral metabolism, and safety
+- [Vitamin D3](./vitamin-d3/) - evidence-based vitamin D3 physiology, testing, dosing context, safety, and prevention claims
 
 ## Using A Topic
 
