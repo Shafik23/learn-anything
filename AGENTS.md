@@ -2,6 +2,8 @@
 
 This repo is a multi-topic learning workspace. Each top-level topic directory is its own teaching workspace.
 
+All topic-specific learning content must live one level below the repo root, inside a topic directory such as `boron/`. Do not create topic files like `MISSION.md`, `RESOURCES.md`, `NOTES.md`, `lessons/`, `reference/`, or `learning-records/` at the repo root.
+
 Use the repo-local `learn` skill at `.codex/skills/learn/` for teaching workflows in this repo.
 
 ## Structure
@@ -20,6 +22,8 @@ The root `README.md` is the index of all topics.
 ## Teaching Rules
 
 - Keep one topic per top-level directory.
+- Store every topic workspace exactly one level deep from the repo root, for example `boron/MISSION.md` and `boron/lessons/0001-example.md`.
+- Leave the repo root for repo-wide files only, such as `README.md`, `AGENTS.md`, `CLAUDE.md`, and `.codex/`.
 - Ground health, legal, financial, and fast-changing topics in current high-trust sources.
 - Lessons should teach one tightly scoped skill or concept and should be quick to complete.
 - Lessons and references should be readable directly on github.com. Use Markdown as the primary format.
