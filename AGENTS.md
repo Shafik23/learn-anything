@@ -2,6 +2,8 @@
 
 This repo is a multi-topic learning workspace. Each top-level topic directory is its own teaching workspace.
 
+Use the repo-local `learn` skill at `.codex/skills/learn/` for teaching workflows in this repo.
+
 ## Structure
 
 Topic directories should follow this layout:

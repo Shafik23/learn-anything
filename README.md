@@ -2,6 +2,8 @@
 
 This repo is a collection of topic-specific learning workspaces.
 
+Teaching workflow instructions live in the repo-local Codex skill at `.codex/skills/learn/`.
+
 Each topic lives one level below the repo root and can contain:
 
 - `MISSION.md` - why the topic matters and what success looks like
