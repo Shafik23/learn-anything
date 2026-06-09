@@ -21,12 +21,10 @@ Invocation:
    - `README.md`
    - `overview.md`
    - `sources.md`
-   - `progress.md`
-   - `lessons/`
    - `reference/`
-4. If the mission in `README.md` is missing or vague, ask the user why they want to learn the topic before writing lessons.
-5. If the mission is clear enough, create or update `overview.md`, then create the first GitHub-renderable Markdown lesson and any useful reference page.
+4. If the mission in `README.md` is missing or vague, ask the user why they want to learn the topic before writing topic pages.
+5. If the mission is clear enough, create or update `overview.md`, then create any useful focused reference pages.
 6. Update the root `README.md` topic index when adding a new topic.
-7. Keep lessons and references as Markdown. Do not create HTML.
+7. Keep all topic pages as Markdown. Do not create HTML.
 
 Use high-trust sources for factual claims, especially for health, legal, financial, technical, or fast-changing topics.

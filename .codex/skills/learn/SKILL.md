@@ -37,93 +37,85 @@ For `/learn <topic>`:
    - `README.md`
    - `overview.md`
    - `sources.md`
-   - `progress.md`
-   - `lessons/`
    - `reference/`
 4. Update the root `README.md` topic list.
-5. If the mission in `README.md` is missing or vague, ask the user why they want to learn the topic before writing lessons.
-6. If the mission is clear enough, create or update `overview.md`, then create the first Markdown lesson and any useful reference page.
+5. If the mission in `README.md` is missing or vague, ask the user why they want to learn the topic before writing topic pages.
+6. If the mission is clear enough, create or update `overview.md`, then create any useful focused reference pages.
 
 ## Teaching Workspace
 
 Within the active topic directory, learning state is captured in these files:
 
-- `README.md`: the topic front door, mission, roadmap, lesson index, and file index. Use the format in [README-FORMAT.md](./README-FORMAT.md).
+- `README.md`: the topic front door, mission, roadmap, page index, and file index. Use the format in [README-FORMAT.md](./README-FORMAT.md).
 - `overview.md`: the direct explanation of the topic. Use the format in [OVERVIEW-FORMAT.md](./OVERVIEW-FORMAT.md).
 - `sources.md`: trusted sources and communities. Use the format in [SOURCES-FORMAT.md](./SOURCES-FORMAT.md).
-- `progress.md`: compact durable learning state. Use the format in [PROGRESS-FORMAT.md](./PROGRESS-FORMAT.md).
-- `lessons/*.md`: GitHub-renderable Markdown lessons.
-- `reference/*.md`: GitHub-renderable Markdown reference documents.
+- `reference/*.md`: focused supporting pages and quick-reference documents.
 - `glossary.md`: optional canonical vocabulary. Use the format in [GLOSSARY-FORMAT.md](./GLOSSARY-FORMAT.md).
 
-The repo is primarily read on github.com, so Markdown is the primary output format. Do not create HTML lessons or HTML references unless the user explicitly asks for them.
+The repo is primarily read on github.com, so Markdown is the primary output format. Do not create HTML unless the user explicitly asks for it.
 
 ## Philosophy
 
 To learn deeply, the user needs three things:
 
 - **Knowledge**, captured from high-quality, high-trust resources
-- **Skills**, acquired through relevant lessons and exercises
+- **Skills**, acquired through clear explanations, worked examples, and real-world application when useful
 - **Wisdom**, developed by interacting with practitioners, communities, or real-world situations
 
 Before `sources.md` is well populated, prioritize finding high-quality resources. Do not rely on parametric memory for health, legal, financial, fast-changing, or high-stakes topics.
 
 Some topics need more skills than knowledge. Learning theoretical physics might be knowledge-heavy. Learning yoga, drawing, or negotiation might be practice-heavy.
 
-## Lessons
+## Topic Pages
 
-A lesson is the main unit of teaching. Each lesson is one self-contained Markdown file saved to `./lessons/` and named:
+The main unit is a readable topic page, not a quiz or formal lesson.
 
-```text
-0001-short-dash-case-title.md
-```
+Use `overview.md` for the direct explanation of the topic. Use `reference/*.md` for focused supporting pages such as:
 
-Increment the number for each new lesson.
+- `reference/core-map.md`
+- `reference/evidence-map.md`
+- `reference/dose-safety.md`
+- `reference/key-terms.md`
 
-A lesson should teach **one thing only**. It should be completable quickly and give the user a tangible win that builds toward the mission.
+Pages should be:
 
-Lessons should be:
-
-- directly tied to the mission
+- directly tied to the mission in `README.md`
 - in the user's zone of proximal development
 - readable on github.com
 - littered with links to high-trust sources where factual claims need support
-- designed around a feedback loop, such as practice questions with collapsible answers
+- useful as standalone explanations
 
 Use Markdown features that render well on GitHub:
 
 - headings
 - tables
 - blockquotes
-- task lists
 - fenced code blocks
 - links
-- `<details>` / `<summary>` for revealable answers
 
 ## The Mission
 
-Every lesson should tie back to the mission in the topic `README.md`: the concrete reason the user is interested in the topic.
+Every topic page should tie back to the mission in the topic `README.md`: the concrete reason the user is interested in the topic.
 
-If the user is unclear about the mission, or the topic `README.md` has a missing or weak mission, first ask why they want to learn the topic. A bad mission makes lessons too abstract and prevents good sequencing.
+If the user is unclear about the mission, or the topic `README.md` has a missing or weak mission, first ask why they want to learn the topic. A bad mission makes pages too abstract and prevents good sequencing.
 
 Revise the `README.md` mission and roadmap when the user's goal changes.
 
 ## Zone Of Proximal Development
 
-Each lesson should challenge the learner just enough.
+Each page should challenge the learner just enough.
 
-If the user names an exact thing they want to learn, focus there. If they do not, determine the next lesson by:
+If the user names an exact thing they want to learn, focus there. If they do not, determine the next page by:
 
 - reading the mission and roadmap in `README.md`
-- reading `progress.md`
-- reviewing existing lessons and references
+- reviewing existing topic and reference pages
 - choosing the most relevant next skill or concept
 
-If the user says they already know something important, record that in `progress.md` with the claimed depth.
+If the user says they already know something important, reflect that in the `README.md` roadmap or the relevant topic page when useful.
 
 ## Acquiring Knowledge And Skills
 
-Lessons should be designed around a skill or concept the user will practice. Teach only the knowledge needed for the practice.
+Topic pages should explain concepts directly and clearly. Avoid exercises unless the user explicitly asks for them.
 
 For high-trust knowledge:
 
@@ -131,19 +123,11 @@ For high-trust knowledge:
 - keep `sources.md` curated and annotated
 - remove shallow or misleading resources rather than accumulating links
 
-For practice:
-
-- use short scenario questions
-- use worked examples
-- ask the user to classify, explain, calculate, decide, or critique
-- provide answers in `<details>` blocks when the lesson is meant to be self-study on GitHub
-- offer in-agent quizzes when live feedback is better than static answers
-
-Each lesson should remind the user that they can ask follow-up questions.
+Use worked examples when they clarify the subject. Do not add practice drills by default.
 
 ## Acquiring Wisdom
 
-Wisdom comes from applying learning outside the lesson.
+Wisdom comes from applying learning outside the page.
 
 When the user asks a question that appears to require real-world judgment, answer as well as possible from evidence, then suggest an appropriate community, practitioner, or real-world feedback source.
 
@@ -151,7 +135,7 @@ Respect the user's preference if they do not want community involvement.
 
 ## Reference Documents
 
-Create reference documents when a lesson introduces reusable knowledge:
+Create reference documents when reusable knowledge deserves its own focused page:
 
 - syntax and snippets for programming
 - algorithms and checklists for processes
@@ -159,21 +143,4 @@ Create reference documents when a lesson introduces reusable knowledge:
 - exercise routines or skill drills
 - conceptual maps
 
-Reference documents should be compressed and easy to scan on github.com. Name them:
-
-```text
-0001-short-dash-case-title.md
-```
-
-Increment the number for each new reference page.
-
-## Progress
-
-`progress.md` is not a session log. Update it only when something durable changes future teaching:
-
-- the user demonstrated understanding of a non-trivial concept
-- the user disclosed prior knowledge
-- a misconception was corrected
-- the mission shifted
-
-Keep it concise and public-safe.
+Reference documents should be compressed and easy to scan on github.com. Name them with clear slugs, such as `dose-safety.md` or `hormone-terms.md`.

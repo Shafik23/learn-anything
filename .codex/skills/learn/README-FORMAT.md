@@ -25,7 +25,6 @@ Constraints:
 Start here:
 
 - [Overview: {Topic}](./overview.md)
-- [Lesson 1: {Title}](./lessons/0001-title.md)
 - [Reference: {Title}](./reference/title.md)
 
 ## Roadmap
@@ -37,14 +36,12 @@ Start here:
 
 - [sources.md](./sources.md)
 - [overview.md](./overview.md)
-- [progress.md](./progress.md)
 - [reference/{file}.md](./reference/{file}.md)
-- [lessons/{file}.md](./lessons/{file}.md)
 ```
 
 ## Rules
 
 - Keep the mission in `README.md`; do not create a separate `MISSION.md`.
 - Keep it readable on github.com.
-- Update the lesson index and roadmap whenever the topic changes.
+- Update the page index and roadmap whenever the topic changes.
 - Avoid private scratch notes in public topic READMEs.

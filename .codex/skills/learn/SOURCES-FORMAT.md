@@ -1,6 +1,6 @@
 # sources.md Format
 
-`sources.md` is the curated evidence trail for a topic. Lessons should draw factual claims from here whenever possible.
+`sources.md` is the curated evidence trail for a topic. Topic pages should draw factual claims from here whenever possible.
 
 ## Structure
 

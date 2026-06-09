@@ -21,6 +21,6 @@ _Avoid_: Less precise synonym, ambiguous phrase
 - Add a term only when the user understands it.
 - Be opinionated about preferred terminology.
 - Keep definitions tight.
-- Use glossary terms consistently in lessons and references.
+- Use glossary terms consistently in topic pages and references.
 - Group terms under subheadings when natural clusters emerge.
 - Revise definitions as understanding deepens.
