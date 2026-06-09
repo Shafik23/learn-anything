@@ -7,8 +7,8 @@ Each topic lives one level below the repo root and can contain:
 - `MISSION.md` - why the topic matters and what success looks like
 - `RESOURCES.md` - trusted sources and communities
 - `NOTES.md` - teaching preferences and working notes
-- `lessons/` - self-contained HTML lessons
-- `reference/` - printable quick-reference documents
+- `lessons/` - GitHub-renderable Markdown lessons, with optional HTML versions
+- `reference/` - GitHub-renderable Markdown quick-reference documents, with optional printable HTML versions
 - `learning-records/` - durable records of what has been learned
 
 ## Topics
@@ -17,8 +17,6 @@ Each topic lives one level below the repo root and can contain:
 
 ## Using A Topic
 
-Open a lesson directly, or work from inside the topic directory.
+Open a lesson directly on GitHub or work from inside the topic directory.
 
-```bash
-xdg-open /home/shafik23/code/learn-anything/boron/lessons/0001-boron-evidence-map.html
-```
+- [Boron Lesson 1: Build The Evidence Map](./boron/lessons/0001-boron-evidence-map.md)

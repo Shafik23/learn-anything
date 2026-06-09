@@ -4,13 +4,13 @@ Deep science learning workspace for boron supplementation, testosterone, bone he
 
 Start here:
 
-```bash
-xdg-open /home/shafik23/code/learn-anything/boron/lessons/0001-boron-evidence-map.html
-```
+- [Lesson 1: Build The Evidence Map](./lessons/0001-boron-evidence-map.md)
+- [Reference: Boron Core Map](./reference/0001-boron-core-map.md)
 
 Key files:
 
 - [MISSION.md](./MISSION.md)
 - [RESOURCES.md](./RESOURCES.md)
-- [reference/0001-boron-core-map.html](./reference/0001-boron-core-map.html)
-- [lessons/0001-boron-evidence-map.html](./lessons/0001-boron-evidence-map.html)
+- [reference/0001-boron-core-map.md](./reference/0001-boron-core-map.md)
+- [lessons/0001-boron-evidence-map.md](./lessons/0001-boron-evidence-map.md)
+- [lessons/0001-boron-evidence-map.html](./lessons/0001-boron-evidence-map.html) - optional local interactive version
